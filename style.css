@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4cece;
+}
+/* phone style*/
+@media screen and (max-width: 480px){
+    body{
+        font-size: 16px;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    .sidebar, .main-content{
+        width: 100%;
+    }
+    .desktop-only-banner{
+        display: none;
+    }
+    
+}
+
+
+/* Navigation Bar */
+header {
+    background: #965757;
+    color: rgb(41, 5, 5);
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: cursive;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-family:system-ui;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(113, 24, 24, 0.833);
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8c205f;
+}
+
+/* Hero Section */
+.hero {
+    color: rgb(159, 27, 27);
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-style:oblique;
+}
+.hero button{
+    background: #5a1e144a;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration:none;
+    border: none;
+}
+
+/*about section*/
+#about {
+
+}
+
+/*skills section*/
+#skills {
+   
+    padding: 40px;
+}
+
+#skills ul {
+    font-size:large;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+/*project section*/
+#project{
+    
+
+}
+/*contacts section*/
+#contacts{
+    padding: 40px;
+}
+.li{
+    font-size: larger;
+    font-style: oblique;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #8b4545;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #e65c00;
+}
+
+#footer{
+    background: #965757;
+    padding: 20px;
+}
