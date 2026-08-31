@@ -10,7 +10,12 @@
     <!--navigation menu-->
     <header>
     <nav>
+         <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
         <h1 class="logo">MARY</h1>
+        <div id="menu" class="menu">
         <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
@@ -18,6 +23,7 @@
         <li><a href="#project">PROJECT</a></li>
         <li><a href="#contact">CONTACT</a></li>
         </ul>
+        </div>
     </nav>
     
 </header>
@@ -93,5 +99,17 @@ I’m always open to learning new technologies, taking on challenges, and improv
     <p>&copy; Oboh Mary's Portfolio<br> All Rights Reserved &#8482;</br></p>
 </footer>
     </section>
+
+<script>
+    function toggleMenu() {
+    const menu = document.getElementById("menu");
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
 </body>
 </html>
