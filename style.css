@@ -46,31 +46,37 @@ nav {
     padding: 0 20px;
 }
 
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 150px;
+}
+
+.menu a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    background-color: #eee;
+}
 .logo {
     font-size: 24px;
     font-family:system-ui;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: rgba(113, 24, 24, 0.833);
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #8c205f;
-}
 
 /* Hero Section */
 .hero {
