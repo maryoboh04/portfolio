@@ -94,6 +94,8 @@ nav {
     margin-top: 10px;
     text-decoration:none;
     border: none;
+    border-radius: 10px;
+    display: inline-block
 }
 
 /*about section*/
