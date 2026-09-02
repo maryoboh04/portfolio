@@ -1,55 +1,54 @@
-/* General Styles */
+```css
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #f4cece;
-}
-/* phone style*/
-@media screen and (max-width: 480px){
-    body{
-        font-size: 16px;
-    }
-    .container{
-        flex-direction: column;
-        width: 100%;
-        padding: 10px;
-    }
-    .sidebar, .main-content{
-        width: 100%;
-    }
-    .desktop-only-banner{
-        display: none;
-    }
-    
+    color: #290505;
 }
 
 
-/* Navigation Bar */
+/* =========================
+   NAVIGATION
+========================= */
+
 header {
-    background: #965757;
-    color: rgb(41, 5, 5);
-    padding: 5px 0;
+    background-color: #965757;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    font-family: cursive;
+    padding: 10px 0;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1000px;
     margin: auto;
-    align-items: center;
     padding: 0 20px;
+}
+
+.logo {
+    font-family: system-ui;
+    font-size: 24px;
+    margin: 0;
 }
 
 .hamburger {
     font-size: 30px;
     cursor: pointer;
-    width: fit-content;
 }
 
 .menu {
@@ -58,115 +57,230 @@ nav {
     top: 65px;
     left: 20px;
     background-color: white;
-    border: 1px solid #ddd;
-    width: 150px;
+    border-radius: 8px;
+    width: 160px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .menu a {
     display: block;
     padding: 12px;
     text-decoration: none;
-    color: black;
+    color: #290505;
 }
 
 .menu a:hover {
-    background-color: #eee;
-}
-.logo {
-    font-size: 24px;
-    font-family:system-ui;
+    background-color: #f4cece;
 }
 
 
-/* Hero Section */
+/* =========================
+   HERO
+========================= */
+
 .hero {
-    color: rgb(159, 27, 27);
-    padding: 150px 20px;
+    min-height: 100vh;
+    padding: 180px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello {
+    font-size: 20px;
 }
 
 .hero h1 {
-    font-size: 3em;
-    font-style:oblique;
-}
-.hero button{
-    background: #5a1e144a;
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration:none;
-    border: none;
-    border-radius: 10px;
-    display: inline-block
-}
-
-/*about section*/
-#about {
-    color:rgb(41, 5, 5);
-
-}
-
-/*skills section*/
-#skills {
-   
-    padding: 40px;
-}
-
-#skills ul {
-    font-size:large;
-    list-style: none;
-    padding: 0;
-}
-
-#skills li {
-    font-size: 1.2em;
+    font-size: 50px;
     margin: 10px 0;
 }
-/*project section*/
-#project{
-    #button{
-    padding: 5px;
-    color:rgb(41, 5, 5);
-    background-color:#965757;
-    border-radius:5px;
-    text-decoration:none;
+
+.hero h2 {
+    font-size: 25px;
+    margin: 10px 0;
 }
 
+.hero p {
+    max-width: 650px;
+    line-height: 1.7;
 }
-/*contacts section*/
-#contacts{
-    padding: 40px;
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    background-color: #8b4545;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
 }
-.li{
-    font-size: larger;
-    font-style: oblique;
+
+.btn:hover {
+    background-color: #5a1e14;
+    transform: translateY(-3px);
 }
-.form{
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 80px 20px;
+    min-height: 400px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+    max-width: 700px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.learning {
+    font-style: italic;
+}
+
+
+/* =========================
+   PROJECT
+========================= */
+
+.project-card {
+    background-color: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    padding: 80px 20px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+    max-width: 450px;
+    margin: 30px auto;
 }
 
-form input, form textarea {
-    padding: 10px;
-    margin: 10px 0;
+form input,
+form textarea {
+    padding: 12px;
+    margin: 8px 0;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical;
 }
 
 form button {
-    background: #8b4545;
+    background-color: #8b4545;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
+    margin-top: 10px;
     transition: 0.3s;
 }
 
 form button:hover {
-    background: #e65c00;
+    background-color: #5a1e14;
 }
 
-#footer{
-    background: #965757;
-    padding: 20px;
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #965757;
+    padding: 25px;
 }
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 70px 15px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+```
