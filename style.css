@@ -100,6 +100,7 @@ nav {
 
 /*about section*/
 #about {
+    color:rgb(41, 5, 5);
 
 }
 
@@ -121,7 +122,12 @@ nav {
 }
 /*project section*/
 #project{
-    
+    #button{
+    padding: 5px;
+    color:rgb(41, 5, 5);
+    background-color:#965757;
+    border-radius:5px;
+}
 
 }
 /*contacts section*/
@@ -162,10 +168,4 @@ form button:hover {
 #footer{
     background: #965757;
     padding: 20px;
-}
-#button{
-    padding: 5px;
-    color:rgb(41, 5, 5);
-    background-color:#965757;
-    border-radius:5px;
 }
