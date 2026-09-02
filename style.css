@@ -163,3 +163,9 @@ form button:hover {
     background: #965757;
     padding: 20px;
 }
+#button{
+    padding: 5px;
+    color:rgb(41, 5, 5);
+    background-color:#965757;
+    border-radius:5px;
+}
